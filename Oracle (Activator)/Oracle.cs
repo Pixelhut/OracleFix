@@ -60,6 +60,7 @@ namespace Oracle
             ChampionName = Me.ChampionName;
 
             #region OnLoad
+            /*
             FileName = "Oracle - " + DateTime.Now.ToString("yy.MM.dd") + " " + DateTime.Now.ToString("h.mm.ss") + ".txt";
             if (!Directory.Exists(Config.LeagueSharpDirectory + @"\Logs\Oracle"))
             {
@@ -72,8 +73,9 @@ namespace Oracle
 
             else
             {
+            */
                 Game.PrintChat("<font color=\"#1FFF8F\">Oracle# r." + Revision + " -</font><font color=\"#FFFFCC\"> by Kurisu</font>");
-            }
+            //}
 
             #endregion
 
@@ -194,6 +196,7 @@ namespace Oracle
 
         public static void Logger(LogType type, string msg)
         {
+            /*
             var prefix = "[" + DateTime.Now.ToString("T") + " " + type + "]: ";
             using (var file = new StreamWriter(Config.LeagueSharpDirectory + @"\Logs\Oracle\" + FileName, true))
             {
@@ -203,6 +206,7 @@ namespace Oracle
 
             if (Origin.Item("dbool").GetValue<bool>())
                 Console.WriteLine("Oracle: (" + type + ") " + msg);
+            */
         }
 
         public static Obj_AI_Hero Friendly()
